@@ -2,10 +2,6 @@ package com.librarymanagement.model;
 
 import java.time.LocalDate;
 
-/**
- * Represents a library member (student/user).
- * Each member is associated with a User account.
- */
 public class Member {
     private Integer id;
     private Integer userId;
@@ -14,11 +10,9 @@ public class Member {
     private String phone;
     private LocalDate joinDate;
 
-    // Default constructor
     public Member() {
     }
 
-    // Constructor without id (for creation)
     public Member(Integer userId, String name, String email, String phone) {
         this.userId = userId;
         this.name = name;
@@ -26,7 +20,6 @@ public class Member {
         this.phone = phone;
     }
 
-    // Full constructor
     public Member(Integer id, Integer userId, String name, String email, 
                   String phone, LocalDate joinDate) {
         this.id = id;
@@ -37,7 +30,6 @@ public class Member {
         this.joinDate = joinDate;
     }
 
-    // Getters and Setters
     public Integer getId() {
         return id;
     }
@@ -98,4 +90,3 @@ public class Member {
                 '}';
     }
 }
-

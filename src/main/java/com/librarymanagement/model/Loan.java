@@ -2,10 +2,6 @@ package com.librarymanagement.model;
 
 import java.time.LocalDate;
 
-/**
- * Represents a loan transaction (book issue/return).
- * Tracks issue date, due date, return date, and fine amount.
- */
 public class Loan {
     private Integer id;
     private Integer bookId;
@@ -16,22 +12,17 @@ public class Loan {
     private Double fineAmount;
     private LoanStatus status;
 
-    /**
-     * Enum for loan status
-     */
     public enum LoanStatus {
         ISSUED,
         RETURNED,
         OVERDUE
     }
 
-    // Default constructor
     public Loan() {
         this.fineAmount = 0.0;
         this.status = LoanStatus.ISSUED;
     }
 
-    // Constructor for creating a new loan
     public Loan(Integer bookId, Integer memberId, LocalDate issueDate, LocalDate dueDate) {
         this.bookId = bookId;
         this.memberId = memberId;
@@ -41,7 +32,6 @@ public class Loan {
         this.status = LoanStatus.ISSUED;
     }
 
-    // Full constructor
     public Loan(Integer id, Integer bookId, Integer memberId, LocalDate issueDate,
                 LocalDate dueDate, LocalDate returnDate, Double fineAmount, LoanStatus status) {
         this.id = id;
@@ -54,7 +44,6 @@ public class Loan {
         this.status = status;
     }
 
-    // Getters and Setters
     public Integer getId() {
         return id;
     }
@@ -133,4 +122,3 @@ public class Loan {
                 '}';
     }
 }
-

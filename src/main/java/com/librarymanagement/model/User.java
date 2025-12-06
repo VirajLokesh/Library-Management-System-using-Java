@@ -2,10 +2,6 @@ package com.librarymanagement.model;
 
 import java.time.LocalDateTime;
 
-/**
- * Represents a user in the library management system.
- * Users can have different roles (ADMIN, LIBRARIAN, MEMBER).
- */
 public class User {
     private Integer id;
     private String username;
@@ -14,18 +10,15 @@ public class User {
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
 
-    // Default constructor
     public User() {
     }
 
-    // Constructor without id (for creation)
     public User(String username, String passwordHash, Role role) {
         this.username = username;
         this.passwordHash = passwordHash;
         this.role = role;
     }
 
-    // Full constructor
     public User(Integer id, String username, String passwordHash, Role role, 
                 LocalDateTime createdAt, LocalDateTime updatedAt) {
         this.id = id;
@@ -36,7 +29,6 @@ public class User {
         this.updatedAt = updatedAt;
     }
 
-    // Getters and Setters
     public Integer getId() {
         return id;
     }
@@ -95,4 +87,3 @@ public class User {
                 '}';
     }
 }
-

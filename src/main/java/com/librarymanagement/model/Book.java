@@ -2,10 +2,6 @@ package com.librarymanagement.model;
 
 import java.time.LocalDateTime;
 
-/**
- * Represents a book in the library system.
- * Tracks total copies and available copies for inventory management.
- */
 public class Book {
     private Integer id;
     private String isbn;
@@ -18,11 +14,9 @@ public class Book {
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
 
-    // Default constructor
     public Book() {
     }
 
-    // Constructor without id (for creation)
     public Book(String isbn, String title, String author, String publisher, 
                 Integer publishedYear, Integer totalCopies) {
         this.isbn = isbn;
@@ -31,10 +25,9 @@ public class Book {
         this.publisher = publisher;
         this.publishedYear = publishedYear;
         this.totalCopies = totalCopies;
-        this.availableCopies = totalCopies; // Initially all copies are available
+        this.availableCopies = totalCopies;
     }
 
-    // Full constructor
     public Book(Integer id, String isbn, String title, String author, String publisher,
              Integer publishedYear, Integer totalCopies, Integer availableCopies,
              LocalDateTime createdAt, LocalDateTime updatedAt) {
@@ -50,7 +43,6 @@ public class Book {
         this.updatedAt = updatedAt;
     }
 
-    // Getters and Setters
     public Integer getId() {
         return id;
     }
@@ -145,4 +137,3 @@ public class Book {
                 '}';
     }
 }
-

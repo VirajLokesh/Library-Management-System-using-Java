@@ -1,11 +1,5 @@
 package com.librarymanagement.util;
 
-/**
- * Utility class to generate password hashes for initial database setup.
- * This is a helper class - not used in the main application.
- * 
- * Usage: Run this class's main method to generate password hashes.
- */
 public class PasswordHashGenerator {
     public static void main(String[] args) {
         System.out.println("Password Hash Generator");
@@ -21,4 +15,3 @@ public class PasswordHashGenerator {
         }
     }
 }
-
