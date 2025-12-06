@@ -145,10 +145,10 @@ The following users are created by default in the database:
 
 | Username | Password | Role |
 |----------|----------|------|
-| admin | admin123 | ADMIN |
-| librarian | librarian123 | LIBRARIAN |
-| member1 | member123 | MEMBER |
-| member2 | member123 | MEMBER |
+| viraj | Viraj@123 | ADMIN |
+| lokesh | Lokesh@1234 | LIBRARIAN |
+| lokesh1 | Lokesh@123321 | MEMBER |
+| viraj1 | Virah@123321 | MEMBER |
 
 **Note**: These are default credentials for testing. Change them in production!
 
